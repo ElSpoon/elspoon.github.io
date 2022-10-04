@@ -44,6 +44,7 @@ section {
 	padding: 0 5px 0 5px;
 	text-align: center;
 	color: black;
+	min-width: 50%;
 }
 
 section > p > a {
