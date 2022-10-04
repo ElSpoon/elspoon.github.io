@@ -38,13 +38,13 @@ section {
 	place-items:  center;
 	align-content: center;
 	min-height:  20vh;
-	min-width: 50%;
 }
 
 .hidden, .show {
 	padding: 0 5px 0 5px;
 	text-align: center;
 	color: black;
+	min-width: 50%;
 }
 
 section > p > a {
