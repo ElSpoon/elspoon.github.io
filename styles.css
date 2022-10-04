@@ -38,6 +38,7 @@ section {
 	place-items:  center;
 	align-content: center;
 	min-height:  20vh;
+	min-width: 50%;
 }
 
 .hidden, .show {
