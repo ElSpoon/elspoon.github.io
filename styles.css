@@ -45,6 +45,10 @@ section > p {
 	text-align: center;
 }
 
+section > p {
+	color: darkgray;
+}
+
 section > p > a {
 	color: #131316;
 
