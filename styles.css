@@ -40,7 +40,7 @@ section {
 	min-height:  20vh;
 }
 
-section > p {
+.hidden, .show {
 	padding: 0 5px 0 5px;
 	text-align: center;
 	color: black;
