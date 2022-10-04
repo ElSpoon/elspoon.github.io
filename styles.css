@@ -43,10 +43,11 @@ section {
 section > p {
 	padding: 0 5px 0 5px;
 	text-align: center;
+	color: darkgray;
 }
 
 section > p {
-	color: darkgray;
+	
 }
 
 section > p > a {
