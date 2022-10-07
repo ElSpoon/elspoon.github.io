@@ -1,0 +1,51 @@
+.gallery {
+	display:  flex;
+	flex-direction: row;
+	flex-wrap:  wrap;
+	justify-content: center;
+	align-content: center;
+	gap:  25px;
+	max-width: 1400px;
+	margin:  0 auto;
+	padding:  20px 10px;
+	text-align:  center;
+}
+
+.gallery > .box > p, .gallery > .box > h2 {
+	margin:  25px !important;
+}
+
+.gallery > .box > p > a {
+	color: rgba(255, 255, 255, 0.38);
+}
+
+.gallery > .box > p > a:hover {
+	color: darkgray;
+}
+
+.box {
+	background-color: rgba(255, 255, 255, 0.12);
+	box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	height:  300px;
+	width:  100%;
+	max-width:  350px;
+	object-fit:  cover;
+}
+
+.header {
+	margin:  300px auto 400px auto !important;
+	text-align:  center;
+}
+
+.header > p {
+	font-size:  25px;
+}
+
+.header > h1 {
+	font-size:  36px;
+}
+
+.header > p, .header > h1 {
+	color: rgba(255, 255, 255, 0.87);
+}
