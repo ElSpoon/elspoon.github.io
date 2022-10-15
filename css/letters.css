@@ -1,0 +1,80 @@
+:root {
+    --red: #787878;
+    --yellow: #787878;
+    --blue: #787878;
+    --purple: #787878;
+    --gray: #2e2e2e;
+    --background: #121212;
+    --unit: 20px;
+}
+
+.container {
+    margin-top: 150px;
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--unit);
+}
+
+.row {
+    height: var(--unit);
+    display: flex;
+    justify-content: center;
+    gap: var(--unit);
+    animation: load-row 1s  calc(var(--delay) * 100ms + 500ms) forwards;
+    translate: var(--offset);
+}
+
+.cell {
+    height: 100%;
+    width: calc(var(--size, 2)  * var(--unit));
+    background-color: var(--gray);
+    border-radius: 1000px;
+}
+
+.cell.size-2 { --size: 2; }
+.cell.size-3 { --size: 3; }
+.cell.size-4 { --size: 4; }
+.cell.size-5 { --size: 5; }
+.cell.size-4 { --size: 4; }
+.cell.size-6 { --size: 6; }
+.cell.size-7 { --size: 7; }
+.cell.size-8 { --size: 8; }
+.cell.size-9 { --size: 9; }
+.cell.size-10 { --size: 10; }
+.cell.size-11 { --size: 11; }
+.cell.size-12 { --size: 12; }
+.cell.size-13 { --size: 13; }
+.cell.size-14 { --size: 14; }
+.cell.size-15 { --size: 15; }
+.cell.size-16 { --size: 16; }
+.cell.size-17 { --size: 17; }
+.cell.size-18 { --size: 18; }
+.cell.size-19 { --size: 19; }
+.cell.size-20 { --size: 20; }
+
+.cell.blue { background-color: var(--blue); }
+.cell.red { background-color: var(--red); }
+.cell.yellow { background-color: var(--yellow); }
+.cell.purple { background-color: var(--purple); }
+.cell.background {background-color: var(--background); }
+
+.row:nth-child(1) { --delay: 1; --offset: 100px; }
+.row:nth-child(2) { --delay: 2; --offset: -50px; }
+.row:nth-child(3) { --delay: 3; --offset: 100px; }
+.row:nth-child(4) { --delay: 4; --offset: -100px; }
+.row:nth-child(5) { --delay: 5; --offset: 50px; }
+.row:nth-child(6) { --delay: 6; --offset: -5px; }
+.row:nth-child(7) { --delay: 7; --offset: 80px; }
+.row:nth-child(8) { --delay: 8; --offset: -120px; }
+.row:nth-child(9) { --delay: 9; --offset: 15px; }
+.row:nth-child(10) { --delay: 10; --offset: -65px; }
+.row:nth-child(11) { --delay: 11; --offset: 30px; }
+.row:nth-child(12) { --delay: 12; --offset: -20px; }
+.row:nth-child(13) { --delay: 13; --offset: 150px; }
+
+@keyframes load-row {
+    100% {
+        translate: 0;
+    }
+}
